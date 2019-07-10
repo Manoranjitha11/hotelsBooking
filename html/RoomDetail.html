@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Room Details</title>
+    <link href="../css/RoomDetail.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+          <header class ="topnav">
+         <div class="logo">
+            <a href="../index.html"><img src="../images/logo.svg" alt="logo" id="productLogo"></a>
+           </div>
+      <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <div class="menu">
+            <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Room finder</a></li>  
+            </ul>
+            </div>
+        </header>
+        <main class="container">
+    
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img data-image="black" src="../images/image1.jpg" alt="black">
+        <img data-image="blue" src="../images/image2.jpeg" alt="">
+        <img data-image="red" class="active" src="../images/image3.jpg" alt="">
+      </div>
+    
+    
+      <!-- Right Column -->
+      <div class="right-column">
+    
+        <!-- Product Description -->
+        <div class="product-description">
+          <h1>King West Executive Suite with Large Balcony</h1>
+          <p>Make the most of Toronto from this smart and stylish central condo, a clean and comfortable base from which to explore the city. The private balcony is perfect for watching the sunset after a day of sightseeing.</p>
+        </div>
+    
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+    
+          <!-- Product Color -->
+          <div class="product-color">
+            <span class="heading">Images</span>
+    
+            <div class="color-choose">
+              <div class="image1">
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div class="image2">
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div class="image3">
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+    
+          </div>
+    
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span class="heading">Room Type</span>
+    
+            <div class="cable-choose">
+              <button>Regular</button>
+              <button>Premiun</button>
+              <button>Quad</button>
+            </div>
+    
+            <!-- <a href="#">How to configurate your headphones</a> -->
+          </div>
+        </div>
+    
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>148$</span>
+          <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="cart-btn">Book Now</a>
+        </div>
+      </div>
+    </main>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+          <label id= "head" class="label"> Heading</label>
+       <div class="line"></div>
+ <div class="date-container">
+         <div class="center-container">
+             <label for="startDate" class="label">Check In</label>
+             <input type="date" id="startDate" name="search_keywords" placeholder="Start Date">
+         </div>
+         <div class="center-container">
+           <label for="endDate" class="label">Check out</label>
+             <input type="date" id="endDate" name="search_keywords" placeholder="End Date">
+         </div>
+          <div class="center-container">
+            <label for="headCount" class="label">Guests</label>
+             <select id="headCount">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+             </select>
+         </div>
+          
+                <div class="subtotal cf">
+                    <ul>
+                        <li class="totalRow"><span class="label">Subtotal</span><span class="value">$35.00</span></li>
+
+                        <li class="totalRow"><span class="label">Cleaning</span><span class="value">$5.00</span></li>
+
+                        <li class="totalRow"><span class="label">Tax</span><span class="value">$4.00</span></li>
+                        <li class="totalRow final"><span class="label">Total</span><span class="value">$44.00</span></li>
+                    </ul>
+                </div>
+                <div id="id04" class="header">
+              <h1>Booked</h1>
+          </div>
+         <div class="submit-btn">
+         <button onclick="document.getElementById('id04').style.display='block'" style="width:auto;" class="submit-content go-btn">Book Now</button>
+         </div>
+       </div>
+
+  
+  </form>
+</div>
+           <footer id="footer">
+            <!-- Footer top Start -->
+            <div class="footertop">
+                <div class="container">
+                    <div class="companyDetail">
+                        <h2>Service</h2>
+                        <ul>
+                            <li><a href="#">Online Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Change Location</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="companyDetail">
+                        <h2>Quick rooms</h2>
+                        <ul>
+                            <li><a href="#">Single</a></li>
+                            <li><a href="#">Double</a></li>
+                            <li><a href="#">Deluxe</a></li>
+                            <li><a href="#">Prime</a></li>
+                        </ul>
+                    </div>
+                    <div class="companyDetail">
+                        <h2>Policies</h2>
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Billing System</a></li>
+                            <li><a href="#">Ticket System</a></li>
+                        </ul>
+                    </div>
+                    <div class="companyDetail">
+                        <h2>About Shopper</h2>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Store Location</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <div class="companyDetail">
+                        <h2>About Shopper</h2>
+                        <form action="#" class="searchform">
+                            <input type="text" placeholder="Your email address" />
+                            <button type="submit" class="btn-default"> <i class="far fa-arrow-alt-circle-right">Go</i></button>
+                            <p>Get the most recent updates from
+                                <br />our site and be updated your self...</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top End -->
+        </footer>
+  </body>
+</html>

@@ -1,0 +1,484 @@
+body,html{
+  margin:0;
+  padding:0px;
+}
+
+/* Header */
+ #headerMenu {
+     margin: -46px 0;
+}
+/* header section */
+ header{
+     width: 100%;
+    /* height: 40px;
+     */
+     float: left;
+}
+ header ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+ header ul li {
+     float: right;
+     padding-right: 32px;
+}
+ header ul li a {
+     display: block;
+     text-align: center;
+     padding: 14px 0px;
+     font-size: 12px;
+     color: #232323;
+     text-decoration: none;
+     font-family: "Avenir Next", "Avenir", sans-serif;
+     transition: color 0.3s ease;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #232323;
+  padding: 14px 0px;
+  background-color: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EBEBE9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+   display: block;
+     text-align: center;
+     padding: 14px 0px;
+     font-size: 12px;
+     color: #232323;
+     text-decoration: none;
+     font-family: "Avenir Next", "Avenir", sans-serif;
+     transition: color 0.3s ease;
+}
+
+.show{
+  display:block;
+}
+ .headerLogo {
+     display: inline-flex;
+     width: 100%;
+     justify-content: center;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+/* Set a style for all buttons */
+.modal button {
+  background-color: #EF5F40;
+  color: white;
+    padding: 14px 20px;
+    margin: 11px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.modal button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+ text-align: center;
+    margin: 27px 0 27px 0;
+    position: relative;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+#facebook {
+  background-color: #3B5998;
+  color: white;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+ #google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* img.avatar {
+  width: 40%;
+  border-radius: 50%;
+} */
+
+.container {
+  padding: 0 27px 17px 27px;
+}
+.validate-container {
+  padding: 24px 27px 27px 27px;
+}
+.social-container {
+  padding: 20px 27px 20px 27px;
+}
+.logIn-container {
+  padding: 20px 27px 27px 27px;
+}
+.logIn-container label{
+  display: block;
+    font-size: 0.96rem;
+    margin: .5rem;
+    color: #3c3939;
+}
+.container label{
+  display: block;
+    font-size: 0.96rem;
+    margin: .5rem;
+    color: #3c3939;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.767); /* Black w/ opacity */
+  /* background-color: #474e5d; */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+ .line{
+     border-top: 1px solid #888;
+     width: 60%;
+     list-style-type: none;
+     margin: auto;
+     text-align: center;
+     margin-top: 5px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: -22px;
+  color: #000;
+  font-size: 35px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+/* Footer section
+ #footer {
+     background-color: #212529;
+     margin-top: 30px;
+}
+ .footertop {
+     padding-bottom: 40px;
+     padding-top: 30px;
+     background: #212529;
+}
+ #footer .container {
+     padding-left: 0px;
+     padding-right: 0px;
+     display: flex;
+     justify-content: space-around;
+}
+ .companyDetail h2 {
+     margin-top: 20px;
+     color: #666663;
+     font-size: 16px;
+     font-weight: 500;
+     margin-bottom: 22px;
+     text-transform: uppercase;
+}
+ .companyDetail ul {
+     padding-left: 0;
+     margin-bottom: 0;
+     list-style: none;
+}
+ .companyDetail ul li a {
+     color: #8C8C88;
+     font-size: 14px;
+     font-weight: 300;
+     padding: 5px 0;
+     position: relative;
+     display: block;
+     text-decoration: none;
+     background-color: transparent;
+}
+ .companyDetail ul li a:hover {
+     background: none;
+     color: #aa00aa;
+}
+ .searchform input {
+     border: 1px solid #DDDDDD;
+     color: #CCCCC6;
+     font-size: 14px;
+     padding: 7px;
+     width: 150px;
+}
+.cart-checkout{
+  display:inline;
+  cursor:pointer;
+}
+ .searchform button {
+     background: #4CAF50;
+     border-radius: 0;
+     border: none medium;
+     margin-left: -5px;
+     margin-top: -2px;
+     padding: 5px 17px 7.5px 17px;
+}
+ .searchform p {
+     color: #8C8C88;
+     font-size: 14px;
+     font-weight: 300;
+     margin-top: 25px;
+}
+ .searchform button i {
+     color: #FFFFFF;
+     font-size: 20px;
+}
+ .btn-default {
+     color: #333;
+     background-color: #fff;
+     border-color: #ccc;
+     padding: 6px 12px;
+     display: inline-block;
+     cursor: pointer;
+} */
+
+/* cards */
+/* * {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive columns */
+@media screen and (max-width: 940px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+  .cancelbtn {
+     width: 100%;
+  }
+  #footer{
+    display:none;
+  }
+  .form-box{
+    width: 80% !important;
+    left: 0!important;
+    right: 0;
+  }
+  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/* star */
+.checked {
+  color: orange;
+}
+
+/* landing */
+.hero-container{
+ background-image: url("../images/hero-bg.jpg");
+ background-size: cover;
+  position: relative;
+  height: -webkit-fill-available;
+}
+
+/* form-box */
+
+.form-box{
+position: absolute;
+top: 0;
+border-radius : 7px;
+width: 30%;
+height: 450px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+    bottom: 0;
+    left: 198px;
+    /* right: 0; */
+}
+
+.date-container {
+    display: grid;
+    justify-content: ;
+    /* align-content: center; */
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+#locationfind, #headCount, #startDate, #endDate {
+    border: 1px solid #ccc;
+    font-size: .8rem;
+    color: #666;
+    font-weight: normal;
+    height: 3rem;
+    background-color: #fff;
+    padding: .5rem;
+    width: 100%;
+    transition: box-shadow .45s,border-color .45s ease-in-out;
+    box-sizing: border-box;
+    outline: #dddd;
+    -webkit-appearance: none;
+}
+.label {
+    display: block;
+    text-transform: uppercase;
+    font-size: .65rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    color: #000;
+}
+.center-container{
+    padding: 35px 19px 0px 19px;
+}
+.submit-btn{
+ grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+}
+.submit-btn a{
+color: #fff;
+    text-decoration: none;
+}
+.date-container .center-container:nth-child(2){
+  grid-column-start: 2;
+  grid-column-end: 4;
+    max-width: 85%;
+}
+.date-container .center-container:nth-child(1){
+  padding-right:0;
+}
+.go-btn {
+    background-color: #EF5F40;
+    border-color: #EF5F40;
+    padding: 0.8rem 2.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.container h1{
+  font-weight: 300;
+  font-size: 25px;
+  color: #43484D;
+  letter-spacing: 2px;
+}
+/* logo */
+.logo{
+  padding: 14px 0 0 20px;
+}
+ #productLogo{
+     float : left;
+     padding-left: 1px 0 0 10px;
+        height: 33px;
+    width: 73px;
+    
+ }
+/* section head */
+  .sectionHeader {
+    font-family: fontBold;
+    font-size: 1.8rem;
+    /* text-align: center; */
+    padding: 38px 0px 8px 20px;
+}

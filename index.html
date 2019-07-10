@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OYO Rooms</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="hero-container">
+       <header>
+         <div class="logo">
+            <a href="#"><img src="images/logo.svg" alt="logo" id="productLogo"></a>
+           </div>
+            <ul>
+                <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+                <li><a href="#"onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</a></li>
+                <li> <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Accounts
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Edit</a>
+    <a href="#">Log out</a>
+  </div>
+  </div></li>
+            </ul>
+        </header>
+        
+    <div class= "form-box">
+      <div class="center-container">
+        <label  class="label"> Where</label>
+           <input type="search" id="locationfind" name="search_keywords" placeholder="Where do you want to go?" value="" required="" pattern=".{2,}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+       </div>
+ <div class="date-container">
+         <div class="center-container">
+             <label for="startDate" class="label">Check In</label>
+             <input type="date" id="startDate" name="search_keywords" placeholder="Start Date">
+         </div>
+         <div class="center-container">
+           <label for="endDate" class="label">Check out</label>
+             <input type="date" id="endDate" name="search_keywords" placeholder="End Date">
+         </div>
+          <div class="center-container">
+            <label for="headCount" class="label">Guests</label>
+             <select id="headCount">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+             </select>
+         </div>
+         <div class="submit-btn">
+        <a href ="html/BookaRoom.html"> <button type="submit" class="submit-content go-btn">Go</button></a>
+         </div>
+       </div>
+
+    </div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+<div class="social-container">
+  <button type="default" id="facebook"> <i class="fa fa-facebook fa-fw" ></i> Login with Facebook</button>
+
+   <button type="default" id="google"><i class="fa fa-google fa-fw"></i> Login with Google+</button>
+      </div>
+       <div class="line"></div>
+    <div class="logIn-container">
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+         <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <button type="submit">Login</button>
+  <label class="psw">Forgot password?</label>
+    </div>
+  </form>
+</div>
+
+
+<div id="id02" class="modal">
+ 
+  <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      
+      <h1>Create an account.</h1> 
+      <hr>
+      <input type="text" placeholder="Email address" name="ename" required>
+       <input type="text" placeholder="First name" name="fname" required>
+       <input type="text" placeholder="Last name" name="lname" required>             
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">By creating an account you agree to our Terms & Privacy
+      </label>
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+          <img src="images/profile.jpeg" alt="Avatar" class="avatar">
+
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+       <div class="line"></div>
+    <div class="validate-container">
+      <input type="text" placeholder="Edit Email" name="ename" required>
+      <input type="text" placeholder="Edit First name" name="fname" required>            <input type="text" placeholder="Edit Last name" name="lname" required>
+      <input type="password" placeholder="Edit Password" name="psw" required>
+              <button type="submit">Done</button>
+    </div>
+  </form>
+</div>
+</div>
+
+<script>
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+}
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+}
+
+</script>
+
+    
+  </body>
+</html>

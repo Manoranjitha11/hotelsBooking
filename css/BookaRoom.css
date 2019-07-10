@@ -1,0 +1,241 @@
+body,html{
+  margin:0;
+  padding:0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* logo */
+.logo{
+  padding: 8px 0 0 20px;
+}
+ #productLogo{
+     float : left;
+     padding-left: 1px 0 0 10px;
+        height: 33px;
+    width: 73px;
+    
+ }
+ /* Header */
+ #headerMenu {
+     margin: -46px 0;
+}
+/* header section */
+ header{
+
+         display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+ header ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+ header ul li {
+     float: right;
+     padding-right: 32px;
+}
+ header ul li a {
+     display: block;
+     text-align: center;
+     padding: 14px 0px;
+     font-size: 12px;
+     color: #232323;
+     text-decoration: none;
+     font-family: "Avenir Next", "Avenir", sans-serif;
+     transition: color 0.3s ease;
+}
+ .headerLogo {
+     display: inline-flex;
+     width: 100%;
+     justify-content: center;
+}
+/* seacrh */
+.topnav input[type=text] {
+ padding: 10px 20px 10px 25px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  border: 1px solid #232323;
+  font-size: 12px;
+  width:250px;
+}
+.topnav .search-container button {
+padding: 10px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #232323;
+    cursor: pointer;
+    color: #ef5f40;
+}
+
+
+/* section head */
+  .sectionHeader {
+    font-family: fontBold;
+    font-size: 1.8rem;
+    /* text-align: center; */
+    padding: 38px 0px 8px 20px;
+}
+/* cards */
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 940px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+  .cancelbtn {
+     width: 100%;
+  }
+  #footer{
+    display:none;
+  }
+  .form-box{
+    width: 80% !important;
+    left: 0!important;
+    right: 0;
+  }
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: left;
+    display: block;
+    text-align: left;
+    /* width: 100%; */
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+    width: 75%;
+    float: left;  
+  }
+.menu{
+  display:none;
+}
+  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f130;
+}
+/* star */
+.checked {
+  color: #EF5F40;
+}
+
+/* Footer section*/
+ #footer {
+     background-color: #212529;
+     margin-top: 30px;
+}
+ .footertop {
+     padding-bottom: 40px;
+     padding-top: 30px;
+     background: #212529;
+}
+ #footer .container {
+     padding-left: 0px;
+     padding-right: 0px;
+     display: flex;
+     justify-content: space-around;
+}
+ .companyDetail h2 {
+     margin-top: 20px;
+     color: #666663;
+     font-size: 16px;
+     font-weight: 500;
+     margin-bottom: 22px;
+     text-transform: uppercase;
+}
+ .companyDetail ul {
+     padding-left: 0;
+     margin-bottom: 0;
+     list-style: none;
+}
+ .companyDetail ul li a {
+     color: #8C8C88;
+     font-size: 14px;
+     font-weight: 300;
+     padding: 5px 0;
+     position: relative;
+     display: block;
+     text-decoration: none;
+     background-color: transparent;
+}
+ .companyDetail ul li a:hover {
+     background: none;
+     color: #EF5F40;
+}
+ .searchform input {
+     border: 1px solid #DDDDDD;
+     color: #CCCCC6;
+     font-size: 14px;
+     padding: 7px;
+     width: 150px;
+}
+.cart-checkout{
+  display:inline;
+  cursor:pointer;
+}
+ .searchform button {
+     background: #EF5F40;
+     border-radius: 0;
+     border: none medium;
+     margin-left: -5px;
+     margin-top: -2px;
+     padding: 5px 17px 7.5px 17px;
+}
+ .searchform p {
+     color: #8C8C88;
+     font-size: 14px;
+     font-weight: 300;
+     margin-top: 25px;
+}
+ .searchform button i {
+     color: #FFFFFF;
+     font-size: 20px;
+}
+ .btn-default {
+     color: #333;
+     background-color: #fff;
+     border-color: #ccc;
+     padding: 6px 12px;
+     display: inline-block;
+     cursor: pointer;
+}
